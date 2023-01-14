@@ -30,7 +30,7 @@ jobs:
 
     - name: Build Docker image
       run: |
-        docker build -t helm-template-golangapp .
+        docker build -t helm-template-golangapp ./app
 
     - name: Push Docker image
       uses: docker/build-push-action@v2
