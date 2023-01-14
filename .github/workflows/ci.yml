@@ -25,6 +25,7 @@ jobs:
 
     - name: Build
       run: |
+        cd ./app/src/
         go build -o app .
 
     - name: Build Docker image
