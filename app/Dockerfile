@@ -1,9 +1,10 @@
 FROM golang:latest
 
-WORKDIR /app/src
+WORKDIR /app
 
 COPY . .
 
+RUN ls
 RUN go build -o main .
 
 CMD ["./main"]
