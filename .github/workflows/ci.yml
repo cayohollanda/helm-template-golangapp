@@ -20,8 +20,8 @@ jobs:
 
     - name: Get dependencies
       run: |
-        go install github.com/gin-gonic/gin
-        go install github.com/spf13/viper
+        go install github.com/gin-gonic/gin@latest
+        go install github.com/spf13/viper@latest
 
     - name: Build
       run: |
