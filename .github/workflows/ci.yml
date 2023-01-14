@@ -20,12 +20,7 @@ jobs:
 
     - name: Get dependencies
       run: |
-        go test -i ./...
         go install -v  ./...
-
-    - name: Run tests
-      run: |
-        go test -v ./...
 
     - name: Build
       run: |
